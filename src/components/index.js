@@ -1,3 +1,4 @@
 import Submit from "./Submit";
+import ThankYou from "./ThankYou";
 
-export { Submit };
+export { Submit, ThankYou };

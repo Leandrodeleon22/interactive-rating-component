@@ -1,11 +1,14 @@
-import { SubmitPage } from "./pages";
+import { SubmitPage, ThankYouPage } from "./pages";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div>
-      <SubmitPage />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<SubmitPage />}></Route>
+        <Route path="thank-you" element={<ThankYouPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

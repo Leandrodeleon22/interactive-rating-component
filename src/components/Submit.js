@@ -2,9 +2,11 @@ import React from "react";
 import Wrappers from "../assets/Wrappers/Submit";
 import star from "../assets/images/icon-star.svg";
 import { useAppContext } from "../context/appContext";
+import { useNavigate } from "react-router-dom";
 
 const Submit = () => {
   const { numOfPages, page, changePage } = useAppContext();
+  const navigate = useNavigate();
 
   const pages = Array.from({ length: numOfPages }, (_, index) => {
     return index + 1;
@@ -41,7 +43,15 @@ const Submit = () => {
             <span>{}</span>
           </div> */}
         </div>
-        <button className="btn-submit"> Submit</button>
+        <button
+          className="btn-submit"
+          onClick={() => {
+            navigate("/thank-you");
+          }}
+        >
+          {" "}
+          Submit
+        </button>
       </div>
     </Wrappers>
   );

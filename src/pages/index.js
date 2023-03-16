@@ -1,3 +1,3 @@
 import SubmitPage from "./SubmitPage";
-
-export { SubmitPage };
+import ThankYouPage from "./ThankYouPage";
+export { SubmitPage, ThankYouPage };
