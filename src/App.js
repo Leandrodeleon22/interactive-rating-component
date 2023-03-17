@@ -6,7 +6,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route index element={<SubmitPage />}></Route>
-        <Route path="thank-you" element={<ThankYouPage />} />
+        <Route path="/thank-you" element={<ThankYouPage />} />
       </Routes>
     </BrowserRouter>
   );
